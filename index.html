@@ -1,37 +1,89 @@
+<!-- 
+Create an HTML page with your auto-biography. 
+It should use at least 5 different HTML tags and contain the following parts:
+Full name
+Short bio
+List of the most relevant work experience
+List of Hobbies
+Profile picture
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>About Prasana Prasad</title>
-        <style>
-            div {color:orange;}
-            p {color:blue;}
-        </style>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <header>
-                <center><h1>Prasana Kaamakshi Prasad</h1></center>
-                <center><p>Hello, I am a Melbourne based software professional. I enjoy cooking differernt cuisines. I am at the moment faling in love with <em><strong>web developnment</strong></em>. </p></center>
+        <header class="headingborder">
+                <h1>Prasana Kaamakshi Prasad</h1>
         </header>        
         <article>
-            <section>
-                    <center>
-                        <img alt="prasana image" src="https://media-exp1.licdn.com/dms/image/C4E03AQFHruLkuelJrQ/profile-displayphoto-shrink_800_800/0?e=1603324800&v=beta&t=xJNG0M5tPnu6yG5T9m8ZoZo-OwlWmmf-i4TXLZd4WeY" width=300 height=300>
-                    </center>
+            <section class="mainborder">
+            <div id="imgid">
+                        <img alt="prasana image" src="https://media-exp1.licdn.com/dms/image/C4E03AQFHruLkuelJrQ/profile-displayphoto-shrink_800_800/0?e=1603324800&v=beta&t=xJNG0M5tPnu6yG5T9m8ZoZo-OwlWmmf-i4TXLZd4WeY" >
+            </div>
+            <div class="textborder">
+                <section>
+                    <br></br>
+                    <h3>About Me</h3>
+                    <p>Hello, I am a Melbourne based <strong>Junior Web Developer.</strong>
+                    I grew up in South India and after my graduation, I worked as a fresher in HCL Technologies for about 3 years. After getting married, went to the UK.
+                    As a family, we then relocated to the 'Land down under'.
+                    I enjoy cooking differernt cuisines. 
+                    I am a fan of Ancient History, Cultures around the world and Philosophies. I am a trained Carnatic Singer.
+                    I like to try out making snacks(Indian and Western) at home. 
+                    I am at the moment faling in love with <em><strong>web developnment</strong></em>.
+                    </p> 
+                </section>
+                <section> 
+                    <h3>Most Relevant Work Experiences</h3>
+                    <!--<p>Junior Test Analyst - <time datetime="2018-05"> 2018-05 </time> to <time datetime="2019-04">2019-04</time></p>
+                    <p>Technical Support Analyst - <time datetime="2011-05"> 2011-05 </time> to <time datetime="2012-07">2012-07</time></p>-->
+                    <table>
+                        <tr>
+                            <th>Position/Title</th>
+                            <th>Company</th>
+                            <th>Time Frame</th>
+                        </tr>
+                        <tr>
+                            <td>Junior Test Analyst</td>
+                            <td><a href="http://www.seamlesscms.com.au">SeamlessCMS Pvt Ltd</a></td> 
+                            <td>2017-05 - 2018-04</td>
+                        </tr>
+                        <tr>
+                            <td>Technical Support Analyst</td>
+                            <td><a href="https://www.cdsw.com.au">CDS Worldwide Pvt Ltd</a></td> 
+                            <td>2011-05 - 2012-07</td>
+                        </tr>
+                        <tr>
+                            <td>Member of technical Staff</td>
+                            <td><a href="http://www.hcltech.com" >HCL Technologies</a></td> 
+                            <td>2002-02 - 2005-04</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Trying out new recipes</li>
+                        <li>Singing and Learning new songs</li>
+                        <li>Watching Musicals-Mary Poppins, Oliver Twist, The Sound of Music.</li>
+                    </ul>
+                </section>
+            </div>
             </section>
-            <section>
-                <h2 style="text-align:center;"><a href="test.html" >Practice here</a></h2>
-            </section>
+            <div class="clearfix"></div>
         </article>
-        <nav>
-            <center>
-            <ul style="text-align:center;">
-                <li><a href="https://www.linkedin.com/in/prasana-prasad-33a0316" >linkedin</a></li>
-                <li><a href="https://www.facebook.com/prasana.prasad" >facebook</a></li>
-                <li>I am a fan of philosophies. Comming from South India, I am a trained carnatic singer.I like to try out making snacks at home</li>
-                <li><a href="https://www.twitter.com/prasad_prasana">Twitter</a></li>
-            </ul>
-            </center>
-        </nav>
-        <footer><center>This page was created by prasana prasad on <time dateTime="2020-8-20 16:30">20th August</time></center></footer>
+        <footer><center>This page was created by prasana prasad on <time dateTime="2020-8-20 16:30">20th August</time></center>
+            <nav>
+                <center>
+                    <span><a href="mailto:pthirukk@gmail.com">Email</a></span>
+                    <span><a href="https://www.linkedin.com/in/prasana-prasad-33a0316" >linkedin</a></span>
+                    <span><a href="https://www.facebook.com/prasana.prasad" >facebook</a></span>
+                    <span><a href="https://www.twitter.com/prasad_prasana">Twitter</a></span>
+                    <span><a href="./test.html">Learn</a></span>
+                </center>
+           </nav>
+        </footer>
     </body>
 </html>
